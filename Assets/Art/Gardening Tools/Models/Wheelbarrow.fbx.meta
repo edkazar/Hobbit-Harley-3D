@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: 42705786610ee4e949959a77b18b6938
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Container
+    100002: Grips
+    100004: Tube
+    100006: Wheel
+    100008: //RootNode
+    100010: Screw Head
+    100012: Frame
+    100014: Screw Heads
+    100016: Plane
+    100018: Cube
+    100020: Sphere
+    100022: Wheel HQ
+    100024: Screw Head.001
+    100026: Screw Head.002
+    100028: Screw Head.003
+    100030: Wheel LQ
+    100032: Screw Head 1
+    100034: Screw Head 2
+    100036: Screw Head 3
+    100038: Screw Head 4
+    100040: Screws
+    100042: Container HQ
+    100044: Container Cage
+    100046: Container.001
+    100048: Container.bak
+    400000: Container
+    400002: Grips
+    400004: Tube
+    400006: Wheel
+    400008: //RootNode
+    400010: Screw Head
+    400012: Frame
+    400014: Screw Heads
+    400016: Plane
+    400018: Cube
+    400020: Sphere
+    400022: Wheel HQ
+    400024: Screw Head.001
+    400026: Screw Head.002
+    400028: Screw Head.003
+    400030: Wheel LQ
+    400032: Screw Head 1
+    400034: Screw Head 2
+    400036: Screw Head 3
+    400038: Screw Head 4
+    400040: Screws
+    400042: Container HQ
+    400044: Container Cage
+    400046: Container.001
+    400048: Container.bak
+    2100000: Grips
+    2100002: Tire
+    2100004: Metal (green)
+    2100006: Aluminium
+    2300000: Container
+    2300002: Grips
+    2300004: Tube
+    2300006: Wheel
+    2300008: Screw Head
+    2300010: Frame
+    2300012: Screw Heads
+    2300014: Plane
+    2300016: Cube
+    2300018: Sphere
+    2300020: Wheel HQ
+    2300022: Screw Head.001
+    2300024: Screw Head.002
+    2300026: Screw Head.003
+    2300028: Wheel LQ
+    2300030: Screw Head 1
+    2300032: Screw Head 2
+    2300034: Screw Head 3
+    2300036: Screw Head 4
+    2300038: Container HQ
+    2300040: Container Cage
+    2300042: Container.001
+    2300044: Container.bak
+    2300046: Screws
+    3300000: Container
+    3300002: Grips
+    3300004: Tube
+    3300006: Wheel
+    3300008: Screw Head
+    3300010: Frame
+    3300012: Screw Heads
+    3300014: Plane
+    3300016: Cube
+    3300018: Sphere
+    3300020: Wheel HQ
+    3300022: Screw Head.001
+    3300024: Screw Head.002
+    3300026: Screw Head.003
+    3300028: Wheel LQ
+    3300030: Screw Head 1
+    3300032: Screw Head 2
+    3300034: Screw Head 3
+    3300036: Screw Head 4
+    3300038: Container HQ
+    3300040: Container Cage
+    3300042: Container.001
+    3300044: Container.bak
+    3300046: Screws
+    4300000: Grips
+    4300002: Wheel
+    4300004: Container
+    4300006: Tube
+    4300008: Screw Head
+    4300010: Screw Heads
+    4300012: Frame
+    4300014: Plane
+    4300016: Cube
+    4300018: Sphere
+    4300020: Wheel HQ
+    4300022: Screw Head.003
+    4300024: Screw Head.002
+    4300026: Screw Head.001
+    4300028: Wheel LQ
+    4300030: Screw Head 4
+    4300032: Screw Head 3
+    4300034: Screw Head 2
+    4300036: Screw Head 1
+    4300038: Container HQ
+    4300040: Container Cage
+    4300042: Container.bak
+    4300044: Container.001
+    4300046: Screws
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

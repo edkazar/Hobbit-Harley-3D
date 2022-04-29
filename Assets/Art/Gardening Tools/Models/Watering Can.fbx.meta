@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: dd98c58d9c98d47778fbc9cb319f38b1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Watering Can
+    100004: Watering Can.001
+    100006: Watering Can.002
+    100008: Watering Can.003
+    100010: Watering Can HQ
+    100012: Watering Can Bottom
+    100014: Watering Can Cage
+    100016: Watering Can HQ.001
+    100018: Watering Can Nozzle
+    100020: 10L Stamp
+    100022: Watering Can HQ 10L.001
+    100024: Body
+    100026: Nozzle
+    100028: Body HQ
+    400000: Watering Can
+    400002: //RootNode
+    400004: Watering Can.001
+    400006: Watering Can.002
+    400008: Watering Can.003
+    400010: Watering Can HQ
+    400012: Watering Can Bottom
+    400014: Watering Can Cage
+    400016: Watering Can HQ.001
+    400018: Watering Can Nozzle
+    400020: 10L Stamp
+    400022: Watering Can HQ 10L.001
+    400024: Body
+    400026: Nozzle
+    400028: Body HQ
+    2100000: Material
+    2100002: Material.001
+    2100004: Material.002
+    2100006: Plastic Pattern (green)
+    2300000: Watering Can
+    2300002: Watering Can.001
+    2300004: Watering Can.002
+    2300006: Watering Can.003
+    2300008: Watering Can HQ
+    2300010: Watering Can Bottom
+    2300012: Watering Can Cage
+    2300014: Watering Can HQ.001
+    2300016: Watering Can Nozzle
+    2300018: //RootNode
+    2300020: 10L Stamp
+    2300022: Watering Can HQ 10L.001
+    2300024: Body
+    2300026: Nozzle
+    2300028: Body HQ
+    3300000: Watering Can
+    3300002: Watering Can.001
+    3300004: Watering Can.002
+    3300006: Watering Can.003
+    3300008: Watering Can HQ
+    3300010: Watering Can Bottom
+    3300012: Watering Can Cage
+    3300014: Watering Can HQ.001
+    3300016: Watering Can Nozzle
+    3300018: //RootNode
+    3300020: 10L Stamp
+    3300022: Watering Can HQ 10L.001
+    3300024: Body
+    3300026: Nozzle
+    3300028: Body HQ
+    4300000: Watering Can.003
+    4300002: Watering Can.002
+    4300004: Watering Can.001
+    4300006: Watering Can
+    4300008: Watering Can HQ
+    4300010: Watering Can Nozzle
+    4300012: Watering Can Bottom
+    4300014: Watering Can HQ.001
+    4300016: Watering Can Cage
+    4300018: Watering Can HQ 10L.001
+    4300020: 10L Stamp
+    4300022: Body
+    4300024: Nozzle
+    4300026: Body HQ
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 50
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
