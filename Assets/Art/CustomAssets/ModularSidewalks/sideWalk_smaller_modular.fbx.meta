@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 4cd157403b8b8654bb0c3c1ce11e6cf7
+guid: bad32d748bf059b4697d282b20e2baf7
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: m_woodenfense
-    second: {fileID: 2100000, guid: f6c333a05097c374f9092c91fddfc1e5, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -71,7 +66,7 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 1
+    normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
