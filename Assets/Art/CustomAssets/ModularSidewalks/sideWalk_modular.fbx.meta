@@ -3,7 +3,12 @@ guid: a1f157dce88f90a4b834834877310700
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_curb1
+    second: {fileID: 2100000, guid: 08535f20d8f54c54f9c69f6ba2f05c84, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
