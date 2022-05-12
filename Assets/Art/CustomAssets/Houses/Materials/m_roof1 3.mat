@@ -114,7 +114,7 @@ Material:
     - _OutlinePixelSizeType: 0
     - _OutlineTextureLOD: 5
     - _OutlineTextureType: 0
-    - _OutlineWidth: 1
+    - _OutlineWidth: 6.38
     - _Parallax: 0.02
     - _RampBands: 4
     - _RampBandsSmoothing: 0.1
