@@ -117,10 +117,10 @@ public class TestControllerManager : MonoBehaviour
                 Vector3 anillo4 = myCamera.WorldToScreenPoint(anillo4Pos.position);
 
 
-                if ((mousePosX < anillo1.x + offset && mousePosX > anillo1.x - offset && mousePosY < anillo1.y + offset && mousePosY > anillo1.y - offset) ||
-                    (mousePosX < anillo2.x + offset && mousePosX > anillo2.x - offset && mousePosY < anillo2.y + offset && mousePosY > anillo2.y - offset) ||
-                    (mousePosX < anillo3.x + offset && mousePosX > anillo3.x - offset && mousePosY < anillo3.y + offset && mousePosY > anillo3.y - offset) ||
-                    (mousePosX < anillo4.x + offset && mousePosX > anillo4.x - offset && mousePosY < anillo4.y + offset && mousePosY > anillo4.y - offset))
+                if ((mousePosX < anillo1.x + offset*2 && mousePosX > anillo1.x - offset*2 && mousePosY < anillo1.y + offset*2 && mousePosY > anillo1.y - offset*2) ||
+                    (mousePosX < anillo2.x + offset*2 && mousePosX > anillo2.x - offset*2 && mousePosY < anillo2.y + offset*2 && mousePosY > anillo2.y - offset*2) ||
+                    (mousePosX < anillo3.x + offset*2 && mousePosX > anillo3.x - offset*2 && mousePosY < anillo3.y + offset*2 && mousePosY > anillo3.y - offset*2) ||
+                    (mousePosX < anillo4.x + offset*2 && mousePosX > anillo4.x - offset*2 && mousePosY < anillo4.y + offset*2 && mousePosY > anillo4.y - offset*2))
                 {
                     timeTaken++;
 

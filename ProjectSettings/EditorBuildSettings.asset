@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Neighborhood_setDressing.unity
+    guid: 19c7ebde0f7f72c48a297abd07fe7ec4
   m_configObjects: {}

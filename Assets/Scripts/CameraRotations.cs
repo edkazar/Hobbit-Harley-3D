@@ -6,7 +6,7 @@ public class CameraRotations : MonoBehaviour
 {
     [SerializeField] Camera myCamera;
 
-    [SerializeField] private float sensitivity = 0.03f;
+    [SerializeField] private float sensitivity = 0.07f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,8 +20,8 @@ public class CameraRotations : MonoBehaviour
         Vector3 vp = myCamera.ScreenToViewportPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, myCamera.nearClipPlane));
         vp.x -= 0.5f;
         vp.y -= 0.5f;
-        vp.x *= sensitivity;
-        vp.y *= sensitivity;
+        vp.x *= sensitivity * Time.deltaTime * 10;
+        vp.y *= sensitivity * Time.deltaTime * 10;
         vp.x += 0.5f;
         vp.y += 0.5f;
         Vector3 sp = myCamera.ViewportToScreenPoint(vp);
