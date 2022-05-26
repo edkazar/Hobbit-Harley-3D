@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Car_Window_MAT
     second: {fileID: 2100000, guid: cdb434810028864499a3f991284b6f1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_Car_MAT
+    second: {fileID: 2100000, guid: ed7ec65b9638e474da36126935a0e08e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
