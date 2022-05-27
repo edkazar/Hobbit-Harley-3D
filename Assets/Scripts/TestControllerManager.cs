@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TestControllerManager : MonoBehaviour
 {
@@ -14,8 +15,14 @@ public class TestControllerManager : MonoBehaviour
     private int innerTestID;
 
     private int[] testsOrder = new int[] { 0, 1, 2, 3, 0, 1, 3, 3, 0, 1, 2, 3 }; // 0: right, 1: left, 2: face, 3: forward
+    private string[] helpTexts = new string[] { "Before crossing a street, look to your right to make sure cars are not coming!",
+                                                "Before crossing a street, look to your left to make sure cars are not coming!",
+                                                "If a car is coming, make eye contact with the driver to ask for the right-of-way!",
+                                                "You are doing great! Now keep going forward!"};
     private int testOrderCounter;
     private int timeTaken;
+    private int testTimeTaken;
+    private int targetHelpTime;
     [SerializeField] private int targetTestTime;
     [SerializeField] private int watchDrivertargetTestTime;
     private int offset;
@@ -24,6 +31,9 @@ public class TestControllerManager : MonoBehaviour
     [SerializeField] private Transform anillo2Pos;
     [SerializeField] private Transform anillo3Pos;
     [SerializeField] private Transform anillo4Pos;
+
+    [SerializeField] private GameObject HelpText;
+    private Text helpTextField;
 
     private CarSpeedController mySpeedController;
     private const int stopMovementID = 1;
@@ -37,6 +47,8 @@ public class TestControllerManager : MonoBehaviour
 
         testOrderCounter = 0;
         timeTaken = 0;
+        testTimeTaken = 0;
+        targetHelpTime = targetTestTime * 2;
         offset = 20;
 
         GameObject MovementController = GameObject.Find("MovementController");
@@ -44,6 +56,10 @@ public class TestControllerManager : MonoBehaviour
 
         GameObject speedController = GameObject.Find("CarMovementController");
         mySpeedController = speedController.GetComponent<CarSpeedController>();
+
+        Transform hText = HelpText.transform.Find("FinalText");
+        helpTextField = hText.GetComponent<Text>();
+        HelpText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -83,6 +99,14 @@ public class TestControllerManager : MonoBehaviour
 
     void runTest()
     {
+        testTimeTaken++;
+
+        if(testTimeTaken >= targetHelpTime)
+        {
+            setText();
+            HelpText.SetActive(true);
+        }
+
         if (outerTestID < myMovementController.getWaypointsLength() - 1) // minus initial waypoint
         {
             Tests[outerTestID][innerTestID].SetActive(true);
@@ -158,8 +182,10 @@ public class TestControllerManager : MonoBehaviour
             {
                 Tests[outerTestID][innerTestID].SetActive(false);
                 timeTaken = 0;
+                testTimeTaken = 0;
                 innerTestID++;
                 testOrderCounter++;
+                HelpText.SetActive(false);
 
                 if (innerTestID >= Tests[outerTestID].Count)
                 {
@@ -172,7 +198,6 @@ public class TestControllerManager : MonoBehaviour
         }
     }
 
-    // al resetear un carro, se estan resetando todos los demas
 
     IEnumerator resumeCarMovement()
     {
@@ -185,5 +210,10 @@ public class TestControllerManager : MonoBehaviour
             myMovementController.hasCrossed = true;
             
         }
+    }
+
+    void setText()
+    {
+        helpTextField.text = helpTexts[testsOrder[testOrderCounter]];
     }
 }
