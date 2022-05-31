@@ -1,14 +1,44 @@
 fileFormatVersion: 2
-guid: 1c370ea938a60c74c8a0d424d0691060
+guid: 4863e4c6d8f2056439525b188ae06f12
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -2362755760589122264
-    second: mascDriving
+      74: 4254214784171743964
+    second: leftRightToss_anim
   - first:
-      74: 1743551313799861072
-    second: mascStill
+      74: 6742791764934128464
+    second: holdTransDribble_anim
+  - first:
+      74: 8684519231246185985
+    second: dribble_anim
+  - first:
+      74: 7254725411488693577
+    second: dribbleTransDrop
+  - first:
+      74: -8978157340619415033
+    second: neutralTransWalk
+  - first:
+      74: -3419257869308726280
+    second: walk
+  - first:
+      74: -695466427478182476
+    second: neutralTransHighWalk
+  - first:
+      74: 6792684775975365902
+    second: highWalk
+  - first:
+      74: -7432830837653226013
+    second: underArmTransLeft
+  - first:
+      74: -8707318448430512448
+    second: underArmTransWalk
+  - first:
+      74: -6670107913646179781
+    second: underArmWalk
+  - first:
+      74: -7279227624608569091
+    second: underArmStop
   externalObjects: {}
   materials:
     materialImportMode: 2

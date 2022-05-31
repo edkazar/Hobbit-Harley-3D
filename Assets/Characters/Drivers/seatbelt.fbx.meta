@@ -1,14 +1,8 @@
 fileFormatVersion: 2
-guid: 1c370ea938a60c74c8a0d424d0691060
+guid: 126521c657235504598431f1e4a9964c
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable:
-  - first:
-      74: -2362755760589122264
-    second: mascDriving
-  - first:
-      74: 1743551313799861072
-    second: mascStill
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 2

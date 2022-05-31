@@ -6,6 +6,12 @@ ModelImporter:
   - first:
       74: 6703186567386587202
     second: test_drive
+  - first:
+      74: 6117197911623843020
+    second: femDriving
+  - first:
+      74: -7450746657502593627
+    second: femStop
   externalObjects: {}
   materials:
     materialImportMode: 2
