@@ -39,6 +39,9 @@ ModelImporter:
   - first:
       74: -7279227624608569091
     second: underArmStop
+  - first:
+      74: -8681430478967412895
+    second: pickUpBall
   externalObjects: {}
   materials:
     materialImportMode: 2
