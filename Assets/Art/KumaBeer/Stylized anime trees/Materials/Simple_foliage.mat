@@ -173,13 +173,14 @@ Material:
     - _Gradientcolor: {r: 0.29803923, g: 0.4431373, b: 0.3372549, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _MainColor: {r: 0.62036574, g: 0.6603774, b: 0.2523135, a: 1}
-    - _Maincolor: {r: 0.4648028, g: 0.6792453, b: 0.33000714, a: 1}
-    - _RimColor: {r: 0.424946, g: 0.6320754, b: 0.1878337, a: 0}
+    - _Maincolor: {r: 0.4154206, g: 0.6320754, b: 0.4247058, a: 1}
+    - _RimColor: {r: 0.10166724, g: 0.21698111, b: 0.11031579, a: 1}
     - _ShadowGradientcolor: {r: 0.35113046, g: 0.49056596, b: 0.2661088, a: 1}
-    - _Shadowcolor: {r: 0.090194486, g: 0.25882158, b: 0.32940984, a: 1}
+    - _Shadowcolor: {r: 0.2627451, g: 0.4039216, b: 0.31764707, a: 1}
     - _TranslucencyColor: {r: 0.73, g: 0.85, b: 0.41, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
     - _WavingTintDarken: {r: 0.41176468, g: 0.41176468, b: 0.41176468, a: 0.628}
     - _WavingTintLighten: {r: 0.30147058, g: 0.30147058, b: 0.30147058, a: 0.5}
     - _diffuseColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

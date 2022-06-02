@@ -188,10 +188,11 @@ Material:
     - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
     - _RimColor: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 1}
     - _SColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
-    - _Shadowcolor: {r: 0.44705883, g: 0.51681715, b: 0.78431374, a: 1}
+    - _Shadowcolor: {r: 1, g: 1, b: 1, a: 1}
     - _Shadowcolor1: {r: 0.28746888, g: 0.44491336, b: 0.7169812, a: 1}
     - _SketchColor: {r: 0, g: 0, b: 0, a: 1}
     - _SnowAngle: {r: 0, g: 1, b: 0, a: 0}
     - _SnowColor: {r: 0.34509805, g: 0.454902, b: 0.14509805, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _TriplanarBlendStrength: {r: 2.6, g: 2.2, b: 2, a: 1}
+  m_BuildTextureStacks: []
