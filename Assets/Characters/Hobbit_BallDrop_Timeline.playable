@@ -630,7 +630,7 @@ MonoBehaviour:
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: 0.2666666666666666
-    m_BlendOutDuration: 0.20000000000000018
+    m_BlendOutDuration: 0.33333333333333304
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -690,7 +690,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: underArmTransWalk
   - m_Version: 1
-    m_Start: 4.316666666666666
+    m_Start: 4.183333333333334
     m_ClipIn: 0.16666666666666607
     m_Asset: {fileID: 3010598305814930923}
     m_Duration: 4.233333333333334
@@ -698,8 +698,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: -4355450362292968838}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: 0.20000000000000018
-    m_BlendOutDuration: 0.4833333333333343
+    m_BlendInDuration: 0.33333333333333304
+    m_BlendOutDuration: 0.3500000000000014
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -767,7 +767,7 @@ MonoBehaviour:
     m_ParentTrack: {fileID: -4355450362292968838}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: 0.4833333333333343
+    m_BlendInDuration: 0.3500000000000014
     m_BlendOutDuration: 0.1833333333333318
     m_MixInCurve:
       serializedVersion: 2
@@ -983,10 +983,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 13.333333333333334
+    m_Start: 13.416666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 9030845041798807702}
-    m_Duration: 7.583333333333334
+    m_Duration: 7.500000000000002
     m_TimeScale: 1
     m_ParentTrack: {fileID: -1429456474991340538}
     m_EaseInDuration: 0
