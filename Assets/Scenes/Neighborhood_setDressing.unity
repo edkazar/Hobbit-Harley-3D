@@ -2943,6 +2943,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: cdb434810028864499a3f991284b6f1b, type: 2}
+    - target: {fileID: 3718432576533555504, guid: 8ebcbca592b788f409acda02ca14dcf4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3718432576971519954, guid: 8ebcbca592b788f409acda02ca14dcf4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -22654,10 +22658,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8144328476565668577, guid: acf399bcc20c4bc43aadcf1f26688347, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 410f097a94e32ab459830198f2d60037, type: 2}
+    - target: {fileID: -6865832267271958016, guid: acf399bcc20c4bc43aadcf1f26688347, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f33093a787b2ccf4e9c46c444fb6a5c4, type: 2}
     - target: {fileID: 919132149155446097, guid: acf399bcc20c4bc43aadcf1f26688347, type: 3}
       propertyPath: m_Name
       value: junHead
       objectReference: {fileID: 0}
+    - target: {fileID: 1282132986256203225, guid: acf399bcc20c4bc43aadcf1f26688347, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d2d2ce5839fa15e439963098a614d81c, type: 2}
+    - target: {fileID: 8492956947902461671, guid: acf399bcc20c4bc43aadcf1f26688347, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e843a1891f67d8546bd819ee6cca3980, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acf399bcc20c4bc43aadcf1f26688347, type: 3}
 --- !u!1001 &1177475592
@@ -29763,6 +29783,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3344311414793565936, guid: 1c370ea938a60c74c8a0d424d0691060, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 410f097a94e32ab459830198f2d60037, type: 2}
     - target: {fileID: 919132149155446097, guid: 1c370ea938a60c74c8a0d424d0691060, type: 3}
       propertyPath: m_Name
       value: Jun
