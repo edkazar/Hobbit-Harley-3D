@@ -42,6 +42,12 @@ ModelImporter:
   - first:
       74: -8681430478967412895
     second: pickUpBall
+  - first:
+      74: -2558239856502468127
+    second: dribbleTransHold
+  - first:
+      74: -4653675148215331283
+    second: leftTransUnderarm
   externalObjects: {}
   materials:
     materialImportMode: 2
