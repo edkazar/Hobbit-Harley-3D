@@ -48,6 +48,15 @@ ModelImporter:
   - first:
       74: -4653675148215331283
     second: leftTransUnderarm
+  - first:
+      74: 6410495998166726930
+    second: underArmTransWave
+  - first:
+      74: -6627363476498757099
+    second: wave
+  - first:
+      74: -7209382757334466883
+    second: waveTransUnderArm
   externalObjects: {}
   materials:
     materialImportMode: 2
