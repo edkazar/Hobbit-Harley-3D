@@ -8,6 +8,8 @@ public class CameraRotations : MonoBehaviour
 
     [SerializeField] private float sensitivity = 0.07f;
 
+    [SerializeField] private Transform playerTransform;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,7 @@ public class CameraRotations : MonoBehaviour
         Vector3 sp = myCamera.ViewportToScreenPoint(vp);
 
         Vector3 v = myCamera.ScreenToWorldPoint(sp);
+
         transform.LookAt(v, Vector3.up);
 
         //transform.LookAt(myCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, myCamera.nearClipPlane)), Vector3.up);

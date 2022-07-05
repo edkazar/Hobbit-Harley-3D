@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RingPosition : MonoBehaviour
+public class HeadPosition : MonoBehaviour
 {
     [SerializeField] private Transform myPos;
     [SerializeField] Transform camera;
@@ -16,7 +16,7 @@ public class RingPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = myPos.position + new Vector3(-0.50f, 0.275f, -0.75f);
+        //transform.position = myPos.position + new Vector3(-0.50f, 0.275f, -0.75f);
         transform.forward = new Vector3(camera.forward.x, transform.forward.y, camera.forward.z);
     }
 }
