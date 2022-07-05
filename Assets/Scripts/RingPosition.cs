@@ -16,7 +16,7 @@ public class RingPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = myPos.position + new Vector3(-0.50f, 0.275f, -0.75f);
+        transform.position = myPos.position + new Vector3(-0.50f, 0.225f, -0.75f);
         transform.forward = new Vector3(camera.forward.x, transform.forward.y, camera.forward.z);
     }
 }

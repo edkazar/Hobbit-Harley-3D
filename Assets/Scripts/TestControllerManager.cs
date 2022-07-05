@@ -38,6 +38,8 @@ public class TestControllerManager : MonoBehaviour
     private CarSpeedController mySpeedController;
     private const int stopMovementID = 1;
 
+    public bool waving;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +62,8 @@ public class TestControllerManager : MonoBehaviour
         Transform hText = HelpText.transform.Find("FinalText");
         helpTextField = hText.GetComponent<Text>();
         HelpText.SetActive(false);
+
+        waving = false;
     }
 
     // Update is called once per frame
@@ -152,6 +156,7 @@ public class TestControllerManager : MonoBehaviour
                     {
                         mySpeedController.changeMovementspeed(stopMovementID);
                         timeTaken = targetTestTime;
+                        waving = true;
                     }
                 }
                 else

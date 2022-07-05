@@ -3913,7 +3913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.27992645
+      value: 1.026337
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3951,9 +3951,57 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c643c7f28064ece4d9ef3821425b1254, type: 2}
+    - target: {fileID: -5973000008881439106, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.3134562e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: -5973000008881439106, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06669998
+      objectReference: {fileID: 0}
+    - target: {fileID: -5973000008881439106, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.2510856e-11
+      objectReference: {fileID: 0}
+    - target: {fileID: -2696933444928770686, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.3134562e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: -2696933444928770686, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06669998
+      objectReference: {fileID: 0}
+    - target: {fileID: -2696933444928770686, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.2510856e-11
+      objectReference: {fileID: 0}
+    - target: {fileID: -837124697197734406, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -837124697197734406, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0667
+      objectReference: {fileID: 0}
+    - target: {fileID: -837124697197734406, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
       propertyPath: m_Name
       value: sheelaHead
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240231480298044044, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.3134562e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240231480298044044, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06669998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240231480298044044, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.2510856e-11
       objectReference: {fileID: 0}
     - target: {fileID: 4824345425998396924, guid: e2ea3ed3aea4816498e345fb2bf96fcd, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -12147,6 +12195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timeline: {fileID: 621732421}
+  testControllerScript: {fileID: 0}
 --- !u!65 &504289365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15758,6 +15807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timeline: {fileID: 993420729}
+  testControllerScript: {fileID: 0}
 --- !u!65 &644475074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28553,15 +28603,15 @@ PrefabInstance:
       objectReference: {fileID: 2062244825}
     - target: {fileID: 667736809457334747, guid: 47aaa6507f0e0c740a3e318ce14d3b9c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.7526162
+      value: 2.508
       objectReference: {fileID: 0}
     - target: {fileID: 667736809457334747, guid: 47aaa6507f0e0c740a3e318ce14d3b9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.276
+      value: 1.399
       objectReference: {fileID: 0}
     - target: {fileID: 667736809457334747, guid: 47aaa6507f0e0c740a3e318ce14d3b9c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.092015
+      value: -10.351001
       objectReference: {fileID: 0}
     - target: {fileID: 667736809457334747, guid: 47aaa6507f0e0c740a3e318ce14d3b9c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28605,7 +28655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 667736809716571769, guid: 47aaa6507f0e0c740a3e318ce14d3b9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 667736809716571769, guid: 47aaa6507f0e0c740a3e318ce14d3b9c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28651,6 +28701,10 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 2062244825}
+    - target: {fileID: 667736810033181384, guid: 47aaa6507f0e0c740a3e318ce14d3b9c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.28
+      objectReference: {fileID: 0}
     - target: {fileID: 667736810312626495, guid: 47aaa6507f0e0c740a3e318ce14d3b9c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -32391,7 +32445,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253086234}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 9.21, y: 8.819, z: 0.39000034}
+  m_LocalPosition: {x: 9.21, y: 8.819, z: -3.65}
   m_LocalScale: {x: 0.5270804, y: 0.5270804, z: 0.5270804}
   m_Children:
   - {fileID: 4209262122170850775}
@@ -34950,6 +35004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timeline: {fileID: 993420729}
+  testControllerScript: {fileID: 0}
 --- !u!65 &1367871773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49027,6 +49082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timeline: {fileID: 665502920}
+  testControllerScript: {fileID: 0}
 --- !u!1 &1965306892
 GameObject:
   m_ObjectHideFlags: 0

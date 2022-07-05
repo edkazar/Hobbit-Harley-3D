@@ -17,6 +17,6 @@ public class HeadPosition : MonoBehaviour
     void Update()
     {
         //transform.position = myPos.position + new Vector3(-0.50f, 0.275f, -0.75f);
-        transform.forward = new Vector3(camera.forward.x, transform.forward.y, camera.forward.z);
+        transform.forward = new Vector3(-camera.forward.x, -transform.forward.y, -camera.forward.z);
     }
 }
