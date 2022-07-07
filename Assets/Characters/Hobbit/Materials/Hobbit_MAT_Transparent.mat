@@ -10,13 +10,13 @@ Material:
   m_Name: Hobbit_MAT_Transparent
   m_Shader: {fileID: 4800000, guid: f8d49205b3b0a644195633020367689d, type: 3}
   m_ShaderKeywords: TCP2_DISABLE_WRAPPED_LIGHT TCP2_REFLECTIONS_FRESNEL TCP2_RIM_LIGHTING_LIGHTMASK
-    TCP2_SHADOW_LIGHT_COLOR TCP2_UV_NORMALS_FULL _ALPHABLEND_ON
+    TCP2_SHADOW_LIGHT_COLOR TCP2_UV_NORMALS_FULL _ALPHATEST_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 2450
   stringTagMap:
-    RenderType: Transparent
+    RenderType: TransparentCutout
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -97,7 +97,7 @@ Material:
     - _DirectIntensityOutline: 1
     - _DissolveGradientWidth: 0.506
     - _DissolveValue: 0
-    - _DstBlend: 10
+    - _DstBlend: 0
     - _EmissionChannel: 4
     - _EnableOutline: 0
     - _FresnelMax: 1.5
@@ -110,11 +110,14 @@ Material:
     - _MatCapMaskChannel: 0
     - _MatCapType: 0
     - _Metallic: 0.543
-    - _Mode: 2
+    - _Mode: 1
     - _NormalsSource: 0
     - _NormalsUVType: 0
     - _OcclusionChannel: 0
     - _OcclusionStrength: 1
+    - _Offset1: 0
+    - _Offset2: 0
+    - _Outline: 1
     - _OutlineLightingType: 0
     - _OutlineLightingTypeURP: 0
     - _OutlineMaxWidth: 1
@@ -128,10 +131,10 @@ Material:
     - _RampBandsSmoothing: 0.1
     - _RampOffset: 0
     - _RampScale: 1
-    - _RampSmooth: 0.11
-    - _RampSmoothAdd: 0.977
+    - _RampSmooth: 0.22
+    - _RampSmoothAdd: 1
     - _RampSmoothing: 0.001
-    - _RampThreshold: 0.003
+    - _RampThreshold: 0.03
     - _RampType: 0
     - _ReceiveShadowsOff: 1
     - _ReflectionMapType: 0
@@ -151,11 +154,15 @@ Material:
     - _SpecularToonSize: 0.25
     - _SpecularToonSmoothness: 0.05
     - _SpecularType: 0
-    - _SrcBlend: 5
+    - _SrcBlend: 1
     - _TCP2_DISABLE_WRAPPED_LIGHT: 1
+    - _TCP2_OUTLINE_CONST_SIZE: 0
+    - _TCP2_OUTLINE_TEXTURED: 0
     - _TCP2_RAMPTEXT: 0
     - _TCP2_SPEC_TOON: 0
     - _TCP2_STYLIZED_FRESNEL: 0
+    - _TCP2_ZSMOOTH_ON: 0
+    - _TexLod: 5
     - _UVSec: 0
     - _UseAlphaTest: 0
     - _UseEmission: 0
@@ -171,7 +178,8 @@ Material:
     - _UseRimLightMask: 1
     - _UseShadowTexture: 0
     - _UseSpecular: 0
-    - _ZWrite: 0
+    - _ZSmooth: -0.5
+    - _ZWrite: 1
     - __dummy__: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}

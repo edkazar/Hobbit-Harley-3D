@@ -7,6 +7,8 @@ public class TimelineController : MonoBehaviour
 {
     public GameObject Timeline;
     public TestControllerManager testControllerScript;
+    public GameObject wave; 
+    
 
     void Start()
     {
@@ -19,7 +21,9 @@ public class TimelineController : MonoBehaviour
     {
         if (testControllerScript.waving)
         {
+            PlayableDirector pd2 = wave.GetComponent<PlayableDirector>();
             Debug.Log("I need to wave in here!");
+            pd2.Play();
             testControllerScript.waving = false;
         }
     }
@@ -31,5 +35,7 @@ public class TimelineController : MonoBehaviour
         {
             pd.Play();
         }
+
+       
     }
 }
