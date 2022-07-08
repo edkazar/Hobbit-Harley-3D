@@ -5,6 +5,8 @@ using UnityEngine.Playables;
 
 public class TimelineController : MonoBehaviour
 {
+    [SerializeField] Transform BallPosition;
+
     public GameObject Timeline;
     public TestControllerManager testControllerScript;
     public GameObject wave; 
