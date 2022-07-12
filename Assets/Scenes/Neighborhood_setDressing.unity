@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2128792279}
-  m_IndirectSpecularColor: {r: 0.58850753, g: 0.6519538, b: 0.69000334, a: 1}
+  m_IndirectSpecularColor: {r: 0.5885238, g: 0.6519428, b: 0.69008005, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12324,7 +12324,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6e7adce08b8ff418ee3a8a09523329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BallPosition: {fileID: 0}
+  playerTransform: {fileID: 9087440431407959930}
+  WayPoint2: {fileID: 1345708066}
+  ballTransform: {fileID: 518070061}
+  hobbitBallTransform: {fileID: 1323647229}
   Timeline: {fileID: 621732421}
   testControllerScript: {fileID: 0}
   wave: {fileID: 0}
@@ -12616,7 +12619,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518070057}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 4a716b9c13c97bb4aa897ff1d56b4b4f, type: 2}
   m_CullingMode: 0
@@ -12703,6 +12706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   riggedBall: {fileID: 1225668222}
+  stopRenderBall: 0
 --- !u!1001 &519039390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16053,7 +16057,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6e7adce08b8ff418ee3a8a09523329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BallPosition: {fileID: 0}
+  playerTransform: {fileID: 0}
+  WayPoint2: {fileID: 0}
+  ballTransform: {fileID: 0}
+  hobbitBallTransform: {fileID: 0}
   Timeline: {fileID: 993420729}
   testControllerScript: {fileID: 234019947}
   wave: {fileID: 952042693}
@@ -22191,7 +22198,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6e7adce08b8ff418ee3a8a09523329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BallPosition: {fileID: 0}
+  playerTransform: {fileID: 0}
+  WayPoint2: {fileID: 0}
+  ballTransform: {fileID: 0}
+  hobbitBallTransform: {fileID: 0}
   Timeline: {fileID: 0}
   testControllerScript: {fileID: 0}
   wave: {fileID: 0}
@@ -34520,6 +34530,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 578084721121126791, guid: ac2ff2a55001cc646a45925e60e35105, type: 3}
   m_PrefabInstance: {fileID: 1321725192}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1323647229 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -652325085797611983, guid: 4863e4c6d8f2056439525b188ae06f12, type: 3}
+  m_PrefabInstance: {fileID: 2067545428}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1325706541
 GameObject:
   m_ObjectHideFlags: 0
@@ -34646,6 +34661,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 71760435914412352, guid: 72c197183937abb489f444cad27f6570, type: 3}
+      propertyPath: movementSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 71760435914412352, guid: 72c197183937abb489f444cad27f6570, type: 3}
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 9087440431407959930}
@@ -34699,6 +34718,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72c197183937abb489f444cad27f6570, type: 3}
+--- !u!4 &1345708066 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 71760434171543289, guid: 72c197183937abb489f444cad27f6570, type: 3}
+  m_PrefabInstance: {fileID: 1345708065}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1348645276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35426,7 +35450,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6e7adce08b8ff418ee3a8a09523329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BallPosition: {fileID: 0}
+  playerTransform: {fileID: 0}
+  WayPoint2: {fileID: 0}
+  ballTransform: {fileID: 0}
+  hobbitBallTransform: {fileID: 0}
   Timeline: {fileID: 993420729}
   testControllerScript: {fileID: 0}
   wave: {fileID: 0}
@@ -49275,7 +49302,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6e7adce08b8ff418ee3a8a09523329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BallPosition: {fileID: 0}
+  playerTransform: {fileID: 0}
+  WayPoint2: {fileID: 0}
+  ballTransform: {fileID: 0}
+  hobbitBallTransform: {fileID: 0}
   Timeline: {fileID: 665502920}
   testControllerScript: {fileID: 0}
   wave: {fileID: 0}
@@ -57000,7 +57030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &6473638379852112693
 Animator:
   serializedVersion: 3

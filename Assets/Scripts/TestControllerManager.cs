@@ -39,6 +39,7 @@ public class TestControllerManager : MonoBehaviour
     private const int stopMovementID = 1;
 
     public bool waving;
+    public bool stopRenderBall = false;
 
     // Start is called before the first frame update
     void Start()
@@ -209,7 +210,9 @@ public class TestControllerManager : MonoBehaviour
         if (!myMovementController.hasCrossed)
         {
             mySpeedController.justCrossed = true;
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(4);
+            stopRenderBall = true;
+            yield return new WaitForSeconds(1);
             mySpeedController.resetSpeed(false);
             yield return new WaitForSeconds(2);
             myMovementController.hasCrossed = true;

@@ -8,9 +8,11 @@ public class BallBehavior : MonoBehaviour
     Renderer visibility;
     public GameObject riggedBall;
     SkinnedMeshRenderer rigBall;
-    //MeshRenderer bool streetBall;
-    
-    
+
+    public bool stopRenderBall = false;
+
+    private MovementControllerScript myMovementController;
+    private TestControllerManager myTestController;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,12 @@ public class BallBehavior : MonoBehaviour
         animator = GetComponent<Animator>();
 
         rigBall = riggedBall.GetComponent<SkinnedMeshRenderer>();
-        
+
+        GameObject MovementController = GameObject.Find("MovementController");
+        myMovementController = MovementController.GetComponent<MovementControllerScript>();
+
+        GameObject TestController = GameObject.Find("TestController");
+        myTestController = TestController.GetComponent<TestControllerManager>();
     }
 
     // Update is called once per frame
@@ -31,22 +38,12 @@ public class BallBehavior : MonoBehaviour
         if(!rigBall.enabled)
         {
             GetComponent<MeshRenderer>().enabled = true;
-            GetComponent<Animator>().enabled = true; 
+            //GetComponent<Animator>().enabled = true; 
         }
-        if(rigBall.enabled)
+        if(myTestController.stopRenderBall)
         {
             GetComponent<MeshRenderer>().enabled = false;
-            GetComponent<Animator>().enabled = false;
+            //GetComponent<Animator>().enabled = false;
         }
-        //if (rigBall.enabled)
-        //{
-           // GetComponent<Renderer>().enabled = !GetComponent<Renderer>().enabled;
-            //animator.SetBool("showBall", false);
-        //}
-        //if(!rigBall.enabled)
-        //{
-            //animator.SetBool("showBall", true);
-        //}
-
     }
 }
