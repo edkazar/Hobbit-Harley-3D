@@ -20,11 +20,17 @@ public class TimelineController : MonoBehaviour
     private List<Vector3> WayPoints;
     private int currentTargetPos;
 
+    private Animator animator;
+
+
     void Start()
     {
         WayPoints = new List<Vector3>();
         GameObject manager = GameObject.Find("TestController");
         testControllerScript = manager.GetComponent<TestControllerManager>();
+        animator = GameObject.Find("testBall").GetComponent<Animator>();
+        animator.enabled = false;
+
 
         currentTargetPos = 0;
     }
@@ -41,14 +47,16 @@ public class TimelineController : MonoBehaviour
                 WayPoints.Add(new Vector3(5.42999983f, 0.00300000003f, 53.4500008f));
                 ballTransform.position = hobbitBallTransform.position;
                 startRollingProcess = true;
+                
             }
         }
 
         if(startRollingProcess)
         {
             ballTransform.position = Vector3.MoveTowards(ballTransform.position, WayPoints[currentTargetPos], 5.0f * Time.deltaTime);
-            ballTransform.RotateAround(ballTransform.position, Vector3.up, 270 * Time.deltaTime);
-            ballTransform.RotateAround(ballTransform.position, Vector3.left, 270 * Time.deltaTime);
+            animator.enabled = true;
+            //ballTransform.RotateAround(ballTransform.position, Vector3.up, 270 * Time.deltaTime);
+            //ballTransform.RotateAround(ballTransform.position, Vector3.left, 270 * Time.deltaTime);
             updateTargetPosition();
         }
 

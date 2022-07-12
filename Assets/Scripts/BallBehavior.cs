@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallBehavior : MonoBehaviour
 {
-    Animator animator;
+    //Animator animator;
     Renderer visibility;
     public GameObject riggedBall;
     SkinnedMeshRenderer rigBall;
@@ -20,7 +20,7 @@ public class BallBehavior : MonoBehaviour
 
         GetComponent<MeshRenderer>().enabled = false;
 
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
 
         rigBall = riggedBall.GetComponent<SkinnedMeshRenderer>();
 
@@ -40,7 +40,7 @@ public class BallBehavior : MonoBehaviour
             GetComponent<MeshRenderer>().enabled = true;
             //GetComponent<Animator>().enabled = true; 
         }
-        if(myTestController.stopRenderBall)
+        if(myTestController.stopRenderBall) //rigBall.enabled
         {
             GetComponent<MeshRenderer>().enabled = false;
             //GetComponent<Animator>().enabled = false;
