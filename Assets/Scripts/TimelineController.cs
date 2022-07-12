@@ -46,8 +46,9 @@ public class TimelineController : MonoBehaviour
 
         if(startRollingProcess)
         {
-            ballTransform.position = Vector3.MoveTowards(ballTransform.position, WayPoints[currentTargetPos], 2.0f * Time.deltaTime);
-            ballTransform.RotateAround(ballTransform.position, Vector3.right, 70 * Time.deltaTime);
+            ballTransform.position = Vector3.MoveTowards(ballTransform.position, WayPoints[currentTargetPos], 5.0f * Time.deltaTime);
+            ballTransform.RotateAround(ballTransform.position, Vector3.up, 270 * Time.deltaTime);
+            ballTransform.RotateAround(ballTransform.position, Vector3.left, 270 * Time.deltaTime);
             updateTargetPosition();
         }
 
