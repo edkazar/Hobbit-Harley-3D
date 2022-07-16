@@ -9,6 +9,7 @@ public class TestControllerManager : MonoBehaviour
 
     private int testID;
     private MovementControllerScript myMovementController;
+    private UITaskController myUIController;
     private List<List<GameObject>> Tests;
 
     private int outerTestID;
@@ -60,6 +61,9 @@ public class TestControllerManager : MonoBehaviour
         GameObject speedController = GameObject.Find("CarMovementController");
         mySpeedController = speedController.GetComponent<CarSpeedController>();
 
+        GameObject UIController = GameObject.Find("UI_Checklist");
+        myUIController = UIController.GetComponent<UITaskController>();
+
         Transform hText = HelpText.transform.Find("FinalText");
         helpTextField = hText.GetComponent<Text>();
         HelpText.SetActive(false);
@@ -108,8 +112,11 @@ public class TestControllerManager : MonoBehaviour
 
         if(testTimeTaken >= targetHelpTime)
         {
-            setText();
-            HelpText.SetActive(true);
+            if(!myMovementController.getExperienceDone())
+            {
+                setText();
+                HelpText.SetActive(true);
+            } 
         }
 
         if (outerTestID < myMovementController.getWaypointsLength() - 1) // minus initial waypoint
@@ -123,6 +130,10 @@ public class TestControllerManager : MonoBehaviour
                 if (screenPos.x < mousePosX)
                 {
                     timeTaken++;
+                }
+                else
+                {
+                    timeTaken = 0;
                 }
             }
             else if (testsOrder[testOrderCounter] == 1)
@@ -164,9 +175,6 @@ public class TestControllerManager : MonoBehaviour
                 {
                     timeTaken = 0;
                 }
-                /*
-                 * Poner true la bandera que dice que ya cruzo
-                 */
             }
             else //testsOrder[testOrderCounter] == 3
             {
@@ -186,6 +194,11 @@ public class TestControllerManager : MonoBehaviour
 
             if (timeTaken >= targetTestTime)
             {
+                if(testsOrder[testOrderCounter] != 3)
+                {
+                    myUIController.unhideCompleted();
+                }
+
                 Tests[outerTestID][innerTestID].SetActive(false);
                 timeTaken = 0;
                 testTimeTaken = 0;
@@ -204,7 +217,6 @@ public class TestControllerManager : MonoBehaviour
         }
     }
 
-
     IEnumerator resumeCarMovement()
     {
         if (!myMovementController.hasCrossed)
@@ -215,8 +227,7 @@ public class TestControllerManager : MonoBehaviour
             yield return new WaitForSeconds(1);
             mySpeedController.resetSpeed(false);
             yield return new WaitForSeconds(2);
-            myMovementController.hasCrossed = true;
-            
+            myMovementController.hasCrossed = true;  
         }
     }
 

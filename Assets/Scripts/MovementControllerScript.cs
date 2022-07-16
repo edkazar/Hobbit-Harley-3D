@@ -16,6 +16,10 @@ public class MovementControllerScript : MonoBehaviour
     public bool fulfilledTest = false;
     public bool startTest = false;
 
+    private UITaskController myUIController;
+
+    private bool experienceDone = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +31,9 @@ public class MovementControllerScript : MonoBehaviour
         WayPoints.Add(GameObject.Find("WayPoint6").transform);
 
         currentTargetPos = 0;
+
+        GameObject UIController = GameObject.Find("UI_Checklist");
+        myUIController = UIController.GetComponent<UITaskController>();
     }
 
     // Update is called once per frame
@@ -52,7 +59,17 @@ public class MovementControllerScript : MonoBehaviour
             else
             {
                 startTest = true;
+                if (!myUIController.ongoingTest && currentTargetPos != 2 && currentTargetPos < 4)
+                {
+                    myUIController.showObjectives();
+                    myUIController.ongoingTest = true;
+                }
             }
+        }
+
+        if (playerTransform.position == WayPoints[4].position)
+        {
+            experienceDone = true;
         }
     }
 
@@ -60,10 +77,16 @@ public class MovementControllerScript : MonoBehaviour
     {
         startTest = false;
         fulfilledTest = true;
+        myUIController.ongoingTest = false;
     }
 
     public int getWaypointsLength()
     {
         return WayPoints.Count;
+    }
+
+    public bool getExperienceDone()
+    {
+        return experienceDone;
     }
 }

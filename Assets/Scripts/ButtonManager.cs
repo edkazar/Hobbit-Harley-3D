@@ -15,6 +15,8 @@ public class ButtonManager : MonoBehaviour
 
     private Transform lastWayPoint;
 
+    private UITaskController myUIController;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,9 @@ public class ButtonManager : MonoBehaviour
         Time.timeScale = 0f;
 
         lastWayPoint = GameObject.Find("WayPoint6").transform;
+
+        GameObject UIController = GameObject.Find("UI_Checklist");
+        myUIController = UIController.GetComponent<UITaskController>();
     }
 
     // Update is called once per frame
@@ -31,7 +36,8 @@ public class ButtonManager : MonoBehaviour
         if (playerTransform.position == lastWayPoint.position)
         {
             finalElements.SetActive(true);
-            Time.timeScale = 0f;
+            myUIController.hideObjectives();
+            Time.timeScale = 0f; 
         }
     }
 
