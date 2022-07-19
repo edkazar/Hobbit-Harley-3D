@@ -108,6 +108,7 @@ public class TestControllerManager : MonoBehaviour
 
     void runTest()
     {
+        
         testTimeTaken++;
 
         if(testTimeTaken >= targetHelpTime)
@@ -125,9 +126,15 @@ public class TestControllerManager : MonoBehaviour
             float mousePosX = Input.mousePosition.x;
             Vector3 screenPos = myCamera.WorldToScreenPoint(Tests[outerTestID][innerTestID].transform.position);
 
+            Debug.Log("mouse: " + mousePosX);
+            Debug.Log("screen: " + (screenPos.x - (offset * 20.0f)));
+
             if (testsOrder[testOrderCounter] == 0)
             {
-                if (screenPos.x < mousePosX)
+                Vector3 toTarget = (Tests[outerTestID][innerTestID].transform.position - myCamera.transform.position).normalized;
+                float dotProd = Vector3.Dot(toTarget, myCamera.transform.forward);
+
+                if (screenPos.x + (offset * 10.0f) < mousePosX && dotProd > 0.35f)
                 {
                     timeTaken++;
                 }
@@ -138,8 +145,10 @@ public class TestControllerManager : MonoBehaviour
             }
             else if (testsOrder[testOrderCounter] == 1)
             {
+                Vector3 toTarget = (Tests[outerTestID][innerTestID].transform.position - myCamera.transform.position).normalized;
+                float dotProd = Vector3.Dot(toTarget, myCamera.transform.forward);
 
-                if (screenPos.x > mousePosX)
+                if (screenPos.x - (offset * 20.0f) > mousePosX && dotProd > 0.35f)
                 {
                     timeTaken++;
                 }
