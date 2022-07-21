@@ -7,9 +7,10 @@ public class BallBehavior : MonoBehaviour
     //Animator animator;
     Renderer visibility;
     public GameObject riggedBall;
-    SkinnedMeshRenderer rigBall;
+    public SkinnedMeshRenderer rigBall;
+    public bool seeRigBall;
 
-    public bool stopRenderBall = false;
+    //public bool stopRenderBall = false;
 
     private MovementControllerScript myMovementController;
     private TestControllerManager myTestController;
@@ -38,11 +39,13 @@ public class BallBehavior : MonoBehaviour
         if(!rigBall.enabled)
         {
             GetComponent<MeshRenderer>().enabled = true;
+            seeRigBall = false;
             //GetComponent<Animator>().enabled = true; 
         }
-        if(myTestController.stopRenderBall) //rigBall.enabled
+        if(rigBall.enabled) // myTestController.stopRenderBall
         {
             GetComponent<MeshRenderer>().enabled = false;
+            seeRigBall = true; 
             //GetComponent<Animator>().enabled = false;
         }
     }

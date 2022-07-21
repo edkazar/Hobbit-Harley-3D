@@ -13,12 +13,17 @@ public class TimelineController : MonoBehaviour
     public GameObject Timeline;
     public TestControllerManager testControllerScript;
     public GameObject wave;
+    public GameObject wave2;
 
     private bool startBallRolling = true;
     private bool startRollingProcess = false;
+    private GameObject ball;
+    private SkinnedMeshRenderer visible;
+    private BallBehavior ballBehaviorScript;
 
     private List<Vector3> WayPoints;
     private int currentTargetPos;
+    
 
     private Animator animator;
 
@@ -29,7 +34,11 @@ public class TimelineController : MonoBehaviour
         GameObject manager = GameObject.Find("TestController");
         testControllerScript = manager.GetComponent<TestControllerManager>();
         animator = GameObject.Find("testBall").GetComponent<Animator>();
+        ball = GameObject.Find("basketball");
+        visible = ball.GetComponent<SkinnedMeshRenderer>();
         animator.enabled = false;
+        
+
 
 
         currentTargetPos = 0;
@@ -62,8 +71,10 @@ public class TimelineController : MonoBehaviour
 
         if (testControllerScript.waving && wave != null)
         {
-            PlayableDirector pd2 = wave.GetComponent<PlayableDirector>();
-            pd2.Play();
+
+            updateWave();
+            
+            
             testControllerScript.waving = false;
         }
     }
@@ -91,6 +102,23 @@ public class TimelineController : MonoBehaviour
             {
                 startRollingProcess = false;
             }
+        }
+    }
+
+
+    void updateWave()
+    {
+
+        if (!visible.enabled)
+        {
+            PlayableDirector pd3 = wave2.GetComponent<PlayableDirector>();
+            pd3.Play();
+        }
+
+        else
+        {
+           PlayableDirector pd2 = wave.GetComponent<PlayableDirector>();
+           pd2.Play();
         }
     }
 }
