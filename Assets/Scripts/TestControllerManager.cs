@@ -19,7 +19,8 @@ public class TestControllerManager : MonoBehaviour
     private string[] helpTexts = new string[] { "Before crossing a street, look to your right to make sure cars are not coming!",
                                                 "Before crossing a street, look to your left to make sure cars are not coming!",
                                                 "If a car is coming, make eye contact with the driver to ask for the right-of-way!",
-                                                "You are doing great! Now keep going forward!"};
+                                                "You are doing great! Now keep going forward!", 
+                                                "Oops! There goes your ball!"};
     private int testOrderCounter;
     private int timeTaken;
     private int testTimeTaken;
@@ -36,8 +37,12 @@ public class TestControllerManager : MonoBehaviour
     [SerializeField] private GameObject HelpText;
     private Text helpTextField;
 
+
     private CarSpeedController mySpeedController;
     private const int stopMovementID = 1;
+
+    private TimelineController myTimelineController;
+    private bool RollingProcess;
 
     public bool waving;
     public bool stopRenderBall = false;
@@ -64,6 +69,12 @@ public class TestControllerManager : MonoBehaviour
         GameObject UIController = GameObject.Find("UI_Checklist");
         myUIController = UIController.GetComponent<UITaskController>();
 
+        Transform waypoint2 = MovementController.transform.Find("WayPoint2");
+        myTimelineController = waypoint2.GetComponent<TimelineController>();
+        
+
+
+
         Transform hText = HelpText.transform.Find("FinalText");
         helpTextField = hText.GetComponent<Text>();
         HelpText.SetActive(false);
@@ -79,6 +90,7 @@ public class TestControllerManager : MonoBehaviour
             runTest();
         }
     }
+
 
     void loadTests()
     {
@@ -119,6 +131,14 @@ public class TestControllerManager : MonoBehaviour
                 HelpText.SetActive(true);
             } 
         }
+
+        if(myTimelineController.startRollingProcess)
+        {
+            helpTextField.text = helpTexts[4];
+            HelpText.SetActive(true);
+        }
+
+
 
         if (outerTestID < myMovementController.getWaypointsLength() - 1) // minus initial waypoint
         {
@@ -244,4 +264,12 @@ public class TestControllerManager : MonoBehaviour
     {
         helpTextField.text = helpTexts[testsOrder[testOrderCounter]];
     }
+
+    //IEnumerator firstTestGuide()
+    //{
+        //helpTextField.text = helpTexts[4]
+        //HelpText.SetActive(true);
+        //yield return new WaitForSeconds(5);
+        //HelpText.SetActive(true);
+    //}
 }

@@ -14,9 +14,10 @@ public class TimelineController : MonoBehaviour
     public TestControllerManager testControllerScript;
     public GameObject wave;
     public GameObject wave2;
+   
 
     private bool startBallRolling = true;
-    private bool startRollingProcess = false;
+    public bool startRollingProcess = false;
     private GameObject ball;
     private SkinnedMeshRenderer visible;
     private BallBehavior ballBehaviorScript;
