@@ -15,7 +15,7 @@ public class TestControllerManager : MonoBehaviour
     private int outerTestID;
     private int innerTestID;
 
-    private int[] testsOrder = new int[] { 0, 1, 2, 3, 0, 1, 3, 3, 0, 1, 2, 3 }; // 0: right, 1: left, 2: face, 3: forward
+    private int[] testsOrder = new int[] { 0, 1, 2, 3, 1, 0, 1, 3, 3, 1, 0, 1, 2, 3 }; // 0: right, 1: left, 2: face, 3: forward
     private string[] helpTexts = new string[] { "Before crossing a street, look to your right to make sure cars are not coming!",
                                                 "Before crossing a street, look to your left to make sure cars are not coming!",
                                                 "If a car is coming, make eye contact with the driver to ask for the right-of-way!",
@@ -146,9 +146,6 @@ public class TestControllerManager : MonoBehaviour
             float mousePosX = Input.mousePosition.x;
             Vector3 screenPos = myCamera.WorldToScreenPoint(Tests[outerTestID][innerTestID].transform.position);
 
-            Debug.Log("mouse: " + mousePosX);
-            Debug.Log("screen: " + (screenPos.x - (offset * 20.0f)));
-
             if (testsOrder[testOrderCounter] == 0)
             {
                 Vector3 toTarget = (Tests[outerTestID][innerTestID].transform.position - myCamera.transform.position).normalized;
@@ -207,7 +204,8 @@ public class TestControllerManager : MonoBehaviour
             }
             else //testsOrder[testOrderCounter] == 3
             {
-                if (mousePosX < screenPos.x + offset && mousePosX > screenPos.x - offset)
+                float sentitivity = 3.0f;
+                if (mousePosX < screenPos.x + (offset * sentitivity) && mousePosX > screenPos.x - (offset * sentitivity))
                 {
                     timeTaken++;
                     if (timeTaken >= watchDrivertargetTestTime / 2)
