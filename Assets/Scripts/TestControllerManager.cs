@@ -44,6 +44,7 @@ public class TestControllerManager : MonoBehaviour
     private TimelineController myTimelineController;
     private bool RollingProcess;
 
+
     public bool waving;
     public bool stopRenderBall = false;
 
@@ -89,6 +90,7 @@ public class TestControllerManager : MonoBehaviour
         {
             runTest();
         }
+        //mySpeedController.rotateWheel();
     }
 
 
@@ -263,11 +265,5 @@ public class TestControllerManager : MonoBehaviour
         helpTextField.text = helpTexts[testsOrder[testOrderCounter]];
     }
 
-    //IEnumerator firstTestGuide()
-    //{
-        //helpTextField.text = helpTexts[4]
-        //HelpText.SetActive(true);
-        //yield return new WaitForSeconds(5);
-        //HelpText.SetActive(true);
-    //}
+   
 }

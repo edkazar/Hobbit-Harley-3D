@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2128792279}
-  m_IndirectSpecularColor: {r: 0.5885238, g: 0.6519428, b: 0.69008005, a: 1}
+  m_IndirectSpecularColor: {r: 0.58850753, g: 0.6519538, b: 0.69000334, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5078,6 +5078,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: CarMovementController
       objectReference: {fileID: 0}
+    - target: {fileID: 3718432575923400067, guid: 8ebcbca592b788f409acda02ca14dcf4, type: 3}
+      propertyPath: wheels.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718432575923400067, guid: 8ebcbca592b788f409acda02ca14dcf4, type: 3}
+      propertyPath: wheels.Array.data[0]
+      value: 
+      objectReference: {fileID: 893248738}
+    - target: {fileID: 3718432575923400067, guid: 8ebcbca592b788f409acda02ca14dcf4, type: 3}
+      propertyPath: wheels.Array.data[1]
+      value: 
+      objectReference: {fileID: 581970776}
+    - target: {fileID: 3718432575923400067, guid: 8ebcbca592b788f409acda02ca14dcf4, type: 3}
+      propertyPath: wheels.Array.data[2]
+      value: 
+      objectReference: {fileID: 1077061092}
+    - target: {fileID: 3718432575923400067, guid: 8ebcbca592b788f409acda02ca14dcf4, type: 3}
+      propertyPath: wheels.Array.data[3]
+      value: 
+      objectReference: {fileID: 1208438865}
+    - target: {fileID: 3718432575923400067, guid: 8ebcbca592b788f409acda02ca14dcf4, type: 3}
+      propertyPath: wheels.Array.data[4]
+      value: 
+      objectReference: {fileID: 1485805948}
+    - target: {fileID: 3718432575923400067, guid: 8ebcbca592b788f409acda02ca14dcf4, type: 3}
+      propertyPath: wheels.Array.data[5]
+      value: 
+      objectReference: {fileID: 1957411136}
     - target: {fileID: 3718432576208677537, guid: 8ebcbca592b788f409acda02ca14dcf4, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5270804
