@@ -167,7 +167,7 @@ public class TestControllerManager : MonoBehaviour
                 Vector3 toTarget = (Tests[outerTestID][innerTestID].transform.position - myCamera.transform.position).normalized;
                 float dotProd = Vector3.Dot(toTarget, myCamera.transform.forward);
 
-                if (screenPos.x - (offset * 20.0f) > mousePosX && dotProd > 0.35f)
+                if (screenPos.x - (offset * 20.0f) > mousePosX && dotProd > 0.25f)
                 {
                     timeTaken++;
                 }
