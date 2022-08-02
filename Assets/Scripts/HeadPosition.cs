@@ -28,7 +28,7 @@ public class HeadPosition : MonoBehaviour
         Vector3 toTarget = (transform.position - camera.transform.position).normalized;
         float dotProd = Vector3.Dot(toTarget, camera.transform.forward);
 
-        if (dotProd > 0.8f)
+        if (dotProd > 0.95f)
         {
             float distanceZ = Mathf.Abs(initialPos.z - carTransform.position.z);
             if (distanceZ <= rotationResetDistance)
