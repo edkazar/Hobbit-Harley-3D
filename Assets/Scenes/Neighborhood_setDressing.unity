@@ -11253,6 +11253,7 @@ MonoBehaviour:
   camera: {fileID: 9087440430139225192}
   carTransform: {fileID: 1314427334}
   rotationResetDistance: 230
+  doIt: 0
 --- !u!4 &355372795 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: 736f2176d3c768c46ab37c067999b114, type: 3}
@@ -24184,6 +24185,7 @@ MonoBehaviour:
   camera: {fileID: 9087440430139225192}
   carTransform: {fileID: 1649986889}
   rotationResetDistance: 170
+  doIt: 0
 --- !u!4 &783213917 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 986fbde2c445b404ea443afb371df64f, type: 3}
@@ -30249,6 +30251,7 @@ MonoBehaviour:
   camera: {fileID: 9087440430139225192}
   carTransform: {fileID: 164108539}
   rotationResetDistance: 110
+  doIt: 1
 --- !u!1001 &969551367
 PrefabInstance:
   m_ObjectHideFlags: 0

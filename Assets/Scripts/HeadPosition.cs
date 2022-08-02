@@ -14,6 +14,8 @@ public class HeadPosition : MonoBehaviour
 
     [SerializeField] private int rotationResetDistance;
 
+    public bool doIt;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,10 +25,16 @@ public class HeadPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distanceZ = Mathf.Abs(initialPos.z - carTransform.position.z);
-        if (distanceZ <= rotationResetDistance)
+        Vector3 toTarget = (transform.position - camera.transform.position).normalized;
+        float dotProd = Vector3.Dot(toTarget, camera.transform.forward);
+
+        if (dotProd > 0.8f)
         {
-            transform.forward = new Vector3(-camera.forward.x, -transform.forward.y, -camera.forward.z);
-        }
+            float distanceZ = Mathf.Abs(initialPos.z - carTransform.position.z);
+            if (distanceZ <= rotationResetDistance)
+            {
+                transform.forward = new Vector3(-camera.forward.x, -transform.forward.y, -camera.forward.z);
+            }
+        }   
     }
 }

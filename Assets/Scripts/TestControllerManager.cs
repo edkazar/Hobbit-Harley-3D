@@ -19,8 +19,8 @@ public class TestControllerManager : MonoBehaviour
     private string[] helpTexts = new string[] { "Before crossing a street, look to your right to make sure cars are not coming!",
                                                 "Before crossing a street, look to your left to make sure cars are not coming!",
                                                 "If a car is coming, make eye contact with the driver to ask for the right-of-way!",
-                                                "You are doing great! Now keep going forward!", 
-                                                "Oops! There goes your ball!"};
+                                                "You are doing great! Now keep going forward!",
+                                                "Oops! There goes your ball! Cross the street to recover it!"};
     private int testOrderCounter;
     private int timeTaken;
     private int testTimeTaken;
@@ -37,12 +37,12 @@ public class TestControllerManager : MonoBehaviour
     [SerializeField] private GameObject HelpText;
     private Text helpTextField;
 
-
     private CarSpeedController mySpeedController;
     private const int stopMovementID = 1;
 
     private TimelineController myTimelineController;
     private bool RollingProcess;
+    private bool firstTest = true;
 
 
     public bool waving;
@@ -73,9 +73,6 @@ public class TestControllerManager : MonoBehaviour
         Transform waypoint2 = MovementController.transform.Find("WayPoint2");
         myTimelineController = waypoint2.GetComponent<TimelineController>();
         
-
-
-
         Transform hText = HelpText.transform.Find("FinalText");
         helpTextField = hText.GetComponent<Text>();
         HelpText.SetActive(false);
@@ -88,9 +85,15 @@ public class TestControllerManager : MonoBehaviour
     {
         if (myMovementController.startTest)
         {
-            runTest();
+            if(firstTest)
+            {
+                StartCoroutine(waitForBall());       
+            }
+            else
+            {
+                runTest();
+            }            
         }
-        //mySpeedController.rotateWheel();
     }
 
 
@@ -134,13 +137,11 @@ public class TestControllerManager : MonoBehaviour
             } 
         }
 
-        if(myTimelineController.startRollingProcess)
+        /*if(myTimelineController.startRollingProcess)
         {
             helpTextField.text = helpTexts[4];
-            HelpText.SetActive(true);
-        }
-
-
+            HelpText.SetActive(true);   
+        }*/
 
         if (outerTestID < myMovementController.getWaypointsLength() - 1) // minus initial waypoint
         {
@@ -244,6 +245,15 @@ public class TestControllerManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    IEnumerator waitForBall()
+    {
+        helpTextField.text = helpTexts[4];
+        HelpText.SetActive(true);
+        yield return new WaitForSeconds(5);
+        firstTest = false;
+        runTest();
     }
 
     IEnumerator resumeCarMovement()
