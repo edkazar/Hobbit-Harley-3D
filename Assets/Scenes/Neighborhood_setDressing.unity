@@ -26542,7 +26542,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: look rightt
+  m_Text: look right
 --- !u!222 &836571798
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -91,7 +91,7 @@ public class UITaskController : MonoBehaviour
         completedUIs[activeCounter].SetActive(true);
         audioData.PlayDelayed(0);
 
-        if (activeCounter == 2 || activeCounter == 4 || activeCounter == 7)
+        if (activeCounter == 2 || activeCounter == 5 || activeCounter == 9)
         {
             completeImages[completeImagesCounter].enabled = true;
             completeImagesCounter++;
