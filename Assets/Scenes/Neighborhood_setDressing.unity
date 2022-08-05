@@ -1721,8 +1721,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37917884}
-  m_LocalRotation: {x: 0.9420246, y: -0, z: 0.33554405, w: 0}
-  m_LocalPosition: {x: 14.85419, y: -1.8600606, z: -4.946209}
+  m_LocalRotation: {x: 0.9404783, y: -0, z: 0.3398537, w: 0}
+  m_LocalPosition: {x: 9.77, y: -1.8600606, z: -0.07}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1299330151}
@@ -35731,6 +35731,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1b592821cbedf3e4e9a8659bb5649fd2, type: 2}
+    - target: {fileID: 1067069894006614868, guid: 47aaa6507f0e0c740a3e318ce14d3b9c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067069894006614868, guid: 47aaa6507f0e0c740a3e318ce14d3b9c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 57.8
+      objectReference: {fileID: 0}
     - target: {fileID: 1067069894256844407, guid: 47aaa6507f0e0c740a3e318ce14d3b9c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.07
@@ -41434,6 +41442,10 @@ PrefabInstance:
     - target: {fileID: 3425463455796700749, guid: 0bed9f9135545294ab5d429e1c75cac5, type: 3}
       propertyPath: m_Name
       value: City Car Hatchback (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3425463455796700749, guid: 0bed9f9135545294ab5d429e1c75cac5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3785641267954157464, guid: 0bed9f9135545294ab5d429e1c75cac5, type: 3}
       propertyPath: m_Materials.Array.size
