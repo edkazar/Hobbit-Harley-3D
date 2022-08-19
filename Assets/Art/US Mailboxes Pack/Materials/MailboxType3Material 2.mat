@@ -88,7 +88,7 @@ Material:
     - _OutlinePixelSizeType: 0
     - _OutlineTextureLOD: 5
     - _OutlineTextureType: 0
-    - _OutlineWidth: 1
+    - _OutlineWidth: 0.14
     - _RampBands: 4
     - _RampBandsSmoothing: 0.1
     - _RampOffset: 0
