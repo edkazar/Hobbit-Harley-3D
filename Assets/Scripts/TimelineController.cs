@@ -54,7 +54,7 @@ public class TimelineController : MonoBehaviour
                 startBallRolling = false;
                 WayPoints.Add(hobbitBallTransform.position);
                 WayPoints.Add(new Vector3(hobbitBallTransform.position.x, 0.2f, hobbitBallTransform.position.z));
-                WayPoints.Add(new Vector3(5.42999983f, 0.00300000003f, 53.4500008f));
+                WayPoints.Add(new Vector3(7.951f, 0.00300000003f, 55.68f));
                 ballTransform.position = hobbitBallTransform.position;
                 startRollingProcess = true;
                 
